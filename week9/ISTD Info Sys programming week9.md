@@ -10,7 +10,7 @@ Example
 ```java
 public class Tea{
     private boolean sugar;
-    private bollean milk;
+    private boolean milk;
     
     Tea(boolean sugar, bollean milk){
         this.sugar = sugar;
