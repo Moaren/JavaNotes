@@ -10,7 +10,7 @@ Example
 ```java
 public class Tea{
     private boolean sugar;
-    private boolean milk;
+    private bollean milk;
     
     Tea(boolean sugar, bollean milk){
         this.sugar = sugar;
@@ -83,7 +83,8 @@ buttonConvert.setOnClickListener(new View.OnClickListener() {
             Toast.makeText(MainActivity.this,R.string.warning_text,Toast.LENGTH_LONG).show();
         }
         else{
-            double result = Double.parseDouble(userInput)*R.string.default_exchange_rate;
+            double result = Double.parseDouble(userInput)*Double.parseDouble(getString(R.string.default_exchange_rate));
+            //R.string.default_exchange_rate returns the id of the exchange rate in terms of Int. It is not the value itself.
             textViewResult.setText(String.valueOf(result));
         }
 
